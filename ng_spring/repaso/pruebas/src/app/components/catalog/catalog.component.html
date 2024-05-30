@@ -1,0 +1,10 @@
+<div class="row">
+
+    @for (item of listaProductos; track $index) {
+        <div class="col catalogo">
+            <app-product-card [item]="item" (productEventEmitter)="addProduct($event)" ></app-product-card>
+        </div>
+
+
+    }
+</div>
